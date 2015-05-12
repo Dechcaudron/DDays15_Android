@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/campo_nombre"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"/>
+
+    <CheckBox
+        android:id="@+id/caja_hombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Es Hombre"/>
+
+    <DatePicker
+        android:id="@+id/selector_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:calendarViewShown="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="Terminar"
+        android:text="Terminado"/>
+
+</LinearLayout>

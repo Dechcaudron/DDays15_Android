@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DDays15</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="nueva_persona">Nueva persona</string>
+    <string name="ver_personas">Ver personas</string>
+</resources>
