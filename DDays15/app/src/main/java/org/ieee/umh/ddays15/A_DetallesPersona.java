@@ -17,6 +17,7 @@ public class A_DetallesPersona extends Activity
 
     protected void onCreate(Bundle a_savedInstanceState)
     {
+        super.onCreate(a_savedInstanceState);
         Intent t_intentoArranque = getIntent();
         posicion = t_intentoArranque.getIntExtra("posicion", -1);
 
@@ -57,8 +58,11 @@ public class A_DetallesPersona extends Activity
                 Persona.ListaPersonas.remove(posicion);
                 dialog.dismiss();
                 Toast.makeText(getBaseContext(), "Has eliminado a una persona", Toast.LENGTH_SHORT).show();
+                setResult(RESULT_OK);
                 finish();
             }
         });
+
+        t_constructor.show();
     }
 }
